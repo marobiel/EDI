@@ -1,0 +1,46 @@
+<!DOCTYPE html><html><head>
+<style type="text/css"><!--
+a, a:visited, a:active
+{
+    color: #3D80B2;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #3D80B2;
+    text-decoration: underline;
+}
+
+th, td, caption {
+    font-family: Verdana, 'Bitstream Vera Sans', 'DejaVu Sans', Tahoma, Geneva, Arial, Sans-serif;
+    font-size: 10pt;
+}
+--></style></head><body><div style="font-family: Verdana, 'Bitstream Vera Sans', 'DejaVu Sans', Tahoma, Geneva, Arial, Sans-serif; font-size: 10pt; color: #000000;"><p>Witam,</p>
+
+<p>W dniu ##DATA## liczba przetwarzanych w systemie EP7 dokumentów IDoc zamówień EDI wyniosła: ##ILOSC##</p>
+
+<p>Status ##ILOSC_ERROR## spośród wspomnianych wyżej IDoc wskazuje na błędy przy tworzeniu zleceń w EP7. W załączonym pliku przesyłam zestawienie tych problematycznych dokumentów IDoc wraz z komunikatami błędów/problemów w kolumnach D i E (rekordy zostały odfiltrowane po warunku F nie równa się &quot;&amp;1 &amp;2 zostało zapamiętane&quot;).</p>
+
+<hr>
+<p>10 IDoc ze stat.</p>
+
+<p><span style="font-family:courier new,courier,monospace">Nie można ustalić numeru klienta w IDOC &amp;</span></p>
+
+<p>to błędy wynikające z niezdefiniowanych w EP7 kodów GLN, których analiza została przesłana w osobnych zgłoszeniach.</p>
+
+<hr>
+<p>1 IDoc ze stat.</p>
+
+<p><span style="font-family:courier new,courier,monospace">Terminem płatności musi być Z000 lub termin wcześniejszy</span></p>
+
+<p>Komunikat oznacza, że termin płatności wybrany przez klienta nie jest dla niego dostępny – zlecenie należy wprowadzić ręcznie lub poprosić klienta o wystawienie zamówienia z innym terminem płatności.</p>
+
+<hr>
+<p>1 IDoc ze stat.</p>
+
+<p><span style="font-family:courier new,courier,monospace">Towar 87550 posiada status: Nieaktualne</span></p>
+
+<p>Rekomendujemy wyjaśnienie przyczyny takiego statusu towarów oraz jeśli to potrzebne wprowadzenie reguł dla kodów EAN, które pozwolą uniknąć pojawiania się takich błędów.</p>
+
+</body></html>
