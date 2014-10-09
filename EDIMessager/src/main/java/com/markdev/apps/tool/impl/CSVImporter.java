@@ -56,7 +56,8 @@ public class CSVImporter implements Importer {
 		}
 		finally{
 			try {
-				reader.close();
+				if (reader!=null)
+				  reader.close();
 			} catch (IOException e) {}
 		}
 	    
