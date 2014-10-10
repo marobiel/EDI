@@ -6,7 +6,7 @@ import java.io.File;
 
 import org.junit.Test;
 
-import com.markdev.apps.tool.ColumnFilter;
+import com.markdev.apps.tool.Filter;
 import com.markdev.apps.tool.Parser;
 import com.markdev.apps.tool.impl.CSVImporter;
 import com.markdev.apps.tool.impl.ParserImpl;
@@ -18,7 +18,7 @@ public class CSVImporterTest {
 	@Test
 	public void testImportData() {
 
-		ColumnFilter filter = new ColumnFilter() {
+		Filter filter = new Filter() {
 
 			public boolean apply(int i) {
 				if (i == 0 || i == 1)
@@ -26,12 +26,20 @@ public class CSVImporterTest {
 
 				return false;
 			}
+
+			public boolean apply(String[] data) {
+				throw new RuntimeException("No used in this object");
+			}
 		};
 
-		ColumnFilter filter1 = new ColumnFilter() {
+		Filter filter1 = new Filter() {
 
 			public boolean apply(int i) {
 				return true;
+			}
+
+			public boolean apply(String[] data) {
+				throw new RuntimeException("No used in this object");
 			}
 		};
 

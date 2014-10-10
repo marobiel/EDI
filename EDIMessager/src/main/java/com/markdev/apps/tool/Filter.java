@@ -1,8 +1,10 @@
 package com.markdev.apps.tool;
 
-public interface ColumnFilter {
+public interface Filter {
 
 	public boolean apply(int i);
+	
+	public boolean apply(String[] data);
 	
 	
 	

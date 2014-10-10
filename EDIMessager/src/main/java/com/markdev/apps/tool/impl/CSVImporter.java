@@ -6,7 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-import com.markdev.apps.tool.ColumnFilter;
+import com.markdev.apps.tool.Filter;
 import com.markdev.apps.tool.Importer;
 import com.markdev.apps.tool.Parser;
 

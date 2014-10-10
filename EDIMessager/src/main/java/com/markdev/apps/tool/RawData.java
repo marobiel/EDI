@@ -45,7 +45,7 @@ public class RawData {
 		
 		List<String> linia=  dane.get(number);
 		
-		System.out.println(linia);
+//		System.out.println(linia);
 		
 		String[] inner = new String[linia.size()];
 		
@@ -56,7 +56,7 @@ public class RawData {
 	
 	
 	
-	public long linesNum(){
+	public int linesNum(){
 		return counter;
 	}
 
@@ -83,7 +83,7 @@ public class RawData {
 			vals.add(linia[columnNumber]);
 		}
 
-		System.out.println(vals);
+//		System.out.println(vals);
 		
 		String[] valsTab = new String[vals.size()];
 		

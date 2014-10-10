@@ -8,6 +8,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import com.markdev.apps.tool.Collector;
+import com.markdev.apps.tool.Filter;
 import com.markdev.apps.tool.RawData;
 
 public class CollectorTest {
@@ -42,12 +43,21 @@ private RawData table;
 	
 	@Test
 	public void test() {
-		Collector collector = new Collector(table);
+		Collector collector = new Collector(table,new Filter() {
+			
+			public boolean apply(int i) {
+				return true;
+			}
+
+			public boolean apply(String[] data) {
+				throw new RuntimeException("No used in this object");
+			}
+		});
 		collector.collect();
 		
 		System.out.println(collector.numLinesFor("Nie można ustalić numeru klienta w IDOC &"));
 		System.out.println(collector.numLinesFor("Kod ISO jednostki miary & nie jest przyporządkowany: pozycja &"));
-		System.out.println(collector.numLines());
+		System.out.println(collector.filteredNumLines());
 		
 		
 		Iterator<String> it = collector.iterator();

@@ -1,27 +1,29 @@
 package com.markdev.apps.tool;
 
-import java.util.Arrays;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
-import java.util.List;
 import java.util.Map;
 
 public class Collector {
 
-	private static final int KEY=5;
-	private static final int PARAM1=6;
-	private static final int PARAM2=7;
-	private static final int PARAM3=8;
-	private static final int PARAM4=9;
+	
+	public static final int STATUS=2;
+	public static final int KEY=5;
+	public static final int PARAM1=6;
+	public static final int PARAM2=7;
+	public static final int PARAM3=8;
+	public static final int PARAM4=9;
 	
 	private RawData rawData;
+    private Filter rowFilter;
 	
 	private Map<String, CollectedData> aggregatedData = new LinkedHashMap<String, CollectedData>();
 	
 
-	public Collector(RawData rawData) {
+	public Collector(RawData rawData,Filter filter) {
 		super();
 		this.rawData = rawData;
+		this.rowFilter=filter;
 	}
 
 	
@@ -35,18 +37,19 @@ public class Collector {
 	  
 	  for (int i=0; i< length;i++){
 		  String[] line = rawData.getLine(i);
-		  if (aggregatedData.containsKey(line[KEY])){
-			  
-			  CollectedData data=aggregatedData.get(line[KEY]);
-			  data.addLine(i, modifyLine(line));
-		  }
-		  else{
-			  
-			  CollectedData data=new CollectedData(line[KEY]);
-			  aggregatedData.put(line[KEY],data );
-			  data.addLine(i, modifyLine(line));
-		  } 
-		  		  
+		  if (this.rowFilter.apply(line)){
+			  if (aggregatedData.containsKey(line[KEY])){
+				  
+				  CollectedData data=aggregatedData.get(line[KEY]);
+				  data.addLine(i, modifyLine(line));
+			  }
+			  else{
+				  
+				  CollectedData data=new CollectedData(line[KEY]);
+				  aggregatedData.put(line[KEY],data );
+				  data.addLine(i, modifyLine(line));
+			  } 
+		  }		  		 
 	  }	
 	}
 	
@@ -99,8 +102,22 @@ public class Collector {
     	return aggregatedData.get(key);
     }
     
-    public int numLines(){
+    public int filteredNumLines(){
     	return aggregatedData.size();
+    }
+    
+    public int filteredAllNumLines(){
+    	Iterator<String> iter = iterator();
+    	int alllines = 0;
+    	while (iter.hasNext()){
+    		CollectedData data = aggregatedData.get(iter.next());
+    		alllines = alllines + data.linesNum();
+    	}
+    	return alllines;
+    }
+    
+    public int allNumLines(){
+    	return rawData.linesNum();
     }
     
     

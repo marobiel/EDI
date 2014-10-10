@@ -3,7 +3,7 @@ package com.markdev.apps.tool.impl;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.markdev.apps.tool.ColumnFilter;
+import com.markdev.apps.tool.Filter;
 import com.markdev.apps.tool.Parser;
 import com.markdev.apps.tool.RawData;
 
@@ -11,9 +11,9 @@ public class ParserImpl implements Parser {
 
 	private RawData tableData;
 	private static final String DELIMER = "\t";
-	private ColumnFilter filter;
+	private Filter filter;
 	
-	public ParserImpl(ColumnFilter filter){
+	public ParserImpl(Filter filter){
 		this.filter=filter;
 	}
 	
