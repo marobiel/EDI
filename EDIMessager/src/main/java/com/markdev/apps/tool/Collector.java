@@ -1,8 +1,11 @@
 package com.markdev.apps.tool;
 
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
+
+import com.markdev.apps.tool.impl.DescRepository;
 
 public class Collector {
 
@@ -18,12 +21,15 @@ public class Collector {
     private Filter rowFilter;
 	
 	private Map<String, CollectedData> aggregatedData = new LinkedHashMap<String, CollectedData>();
-	
+	private DescRepository descRepository;
 
-	public Collector(RawData rawData,Filter filter) {
+	
+	public Collector(RawData rawData,Filter filter,DescRepository repo) {
 		super();
 		this.rawData = rawData;
 		this.rowFilter=filter;
+		this.descRepository=repo;
+		
 	}
 
 	
@@ -45,7 +51,7 @@ public class Collector {
 			  }
 			  else{
 				  
-				  CollectedData data=new CollectedData(line[KEY]);
+				  CollectedData data=new CollectedData(line[KEY],descRepository.get(line[KEY]));
 				  aggregatedData.put(line[KEY],data );
 				  data.addLine(i, modifyLine(line));
 			  } 

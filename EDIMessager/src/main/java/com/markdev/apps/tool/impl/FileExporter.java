@@ -17,12 +17,21 @@ public class FileExporter implements Exporter {
 
 	public void export(Writer wr) {
 		if (file!=null){
+			FileWriter fw = null;
 			try {
-				FileWriter fw = new FileWriter(file);
+				 fw = new FileWriter(file);
 				fw.write(wr.toString());
 								
 			} catch (IOException e) {
-				e.printStackTrace();
+				throw new RuntimeException(e.getMessage());
+			}
+			finally{
+				if (fw!=null)
+					try {
+						fw.close();
+					} catch (IOException e) {
+						throw new RuntimeException(e.getMessage());		
+					}
 			}
 			
 		}

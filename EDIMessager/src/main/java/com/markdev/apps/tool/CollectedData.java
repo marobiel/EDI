@@ -9,10 +9,13 @@ public class CollectedData {
 	private int amount=0;
 	
 	private Map<Integer, String[]> linesWithNumber = new LinkedHashMap<Integer, String[]>();
+	private String desc;
 	
-	public CollectedData(String key) {
+	public CollectedData(String key,String opis) {
 		super();
 		this.key = key;
+		this.desc=opis;
+		
 	}
 
 	
@@ -26,6 +29,14 @@ public class CollectedData {
 		return amount;
 	}
 	
+	
+	
+	
+	public String getDesc() {
+		return desc;
+	}
+
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -55,10 +66,16 @@ public class CollectedData {
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
 		builder.append("CollectedData [key=").append(key).append(", amount=")
-				.append(amount).append(", linesWithNumber=")
-				.append(linesWithNumber).append("]");
+				.append(amount)
+				.append(", desc=")
+				.append(desc)
+				.append(", linesWithNumber=")
+				.append(linesWithNumber)
+				.append("]");
 		return builder.toString();
 	}
+
+
 	
 	
 	

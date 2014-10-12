@@ -10,6 +10,7 @@ import org.junit.Test;
 import com.markdev.apps.tool.Collector;
 import com.markdev.apps.tool.Filter;
 import com.markdev.apps.tool.RawData;
+import com.markdev.apps.tool.impl.DescRepository;
 
 public class CollectorTest {
 
@@ -43,6 +44,15 @@ private RawData table;
 	
 	@Test
 	public void test() {
+		
+		DescRepository repo = new DescRepository() {
+			
+			public String get(String key) {
+				return "TestValue";
+			}
+		};
+		
+		
 		Collector collector = new Collector(table,new Filter() {
 			
 			public boolean apply(int i) {
@@ -50,9 +60,9 @@ private RawData table;
 			}
 
 			public boolean apply(String[] data) {
-				throw new RuntimeException("No used in this object");
+				return true;
 			}
-		});
+		},repo);
 		collector.collect();
 		
 		System.out.println(collector.numLinesFor("Nie można ustalić numeru klienta w IDOC &"));

@@ -1,0 +1,41 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+a, a:visited, a:active
+{
+    color: #3D80B2;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #3D80B2;
+    text-decoration: underline;
+}
+
+th, td, caption {
+    font-family: Verdana, 'Bitstream Vera Sans', 'DejaVu Sans', Tahoma, Geneva, Arial, Sans-serif;
+    font-size: 10pt;
+}
+</style></head>
+<body>
+<div style="font-family: Verdana, 'Bitstream Vera Sans', 'DejaVu Sans', Tahoma, Geneva, Arial, Sans-serif; font-size: 10pt; color: #000000;"><p>Witam,</p>
+
+<p>W dniu $DATA liczba przetwarzanych w systemie EP7 dokumentów IDoc zamówień EDI wyniosła: $ILOSC</p>
+
+<p>Status $ILOSC_ERROR spośród wspomnianych wyżej IDoc wskazuje na błędy przy tworzeniu zleceń w EP7. W załączonym pliku przesyłam zestawienie tych problematycznych dokumentów IDoc wraz z komunikatami błędów/problemów w kolumnach D i E (rekordy zostały odfiltrowane po warunku F nie równa się &quot;&amp;1 &amp;2 zostało zapamiętane&quot;).</p>
+
+
+#foreach ($key in $keyIterator)
+	<hr>
+	<p> $collector.numLinesFor($key) IDoc ze stat.</p>
+	
+	<p><span style="font-family:courier new,courier,monospace">$key</span></p>
+	
+	<p>$collector.get($key).getDesc()</p>
+
+	
+
+#end
+
+</body></html>

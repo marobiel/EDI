@@ -1,33 +1,33 @@
-Typ komunikatu	Numer IDoc	Status	DataB�Stat	GodzB�Stat	TekstStat	Parametr 1	Parametr 2	Parametr 3	Parametr 4
-ORDERS	0000000076435625	53	12.09.2014	20:40:00	Kod ISO jednostki miary & nie jest przyporz�dkowany: pozycja &	PCE
-ORDERS	0000000076435627	53	12.09.2014	20:40:00	Kod ISO jednostki miary & nie jest przyporz�dkowany: pozycja &	PCE
-ORDERS	0000000076435628	53	12.09.2014	20:40:00	Kod ISO jednostki miary & nie jest przyporz�dkowany: pozycja &	PCE			
-ORDERS	0000000076875533	51	18.09.2014	08:11:29	Kod ISO jednostki miary & nie jest przyporz�dkowany: pozycja &	PCE			
-ORDERS	0000000076362396	51	11.09.2014	12:39:34	Kod ISO jednostki miary & nie jest przyporz�dkowany: pozycja &	PCE			
-ORDERS	0000000076357995	51	11.09.2014	11:09:37	Kod ISO jednostki miary & nie jest przyporz�dkowany: pozycja &	PCE			
-ORDERS	0000000076362110	51	11.09.2014	11:54:49	Kod ISO jednostki miary & nie jest przyporz�dkowany: pozycja &	PCE			
-ORDERS	0000000076884586	51	18.09.2014	10:10:15	Kod ISO jednostki miary & nie jest przyporz�dkowany: pozycja &	PCE			
-ORDERS	0000000076704141	51	16.09.2014	16:40:28	Kod ISO jednostki miary & nie jest przyporz�dkowany: pozycja &	PCE			
-ORDERS	0000000076252088	51	10.09.2014	03:39:43	Nie mo�na ustali� numeru klienta w IDOC &	0000000076252088			
-ORDERS	0000000076252100	51	10.09.2014	03:39:58	Nie mo�na ustali� numeru klienta w IDOC &	0000000076252100			
-ORDERS	0000000076252120	51	10.09.2014	03:40:14	Nie mo�na ustali� numeru klienta w IDOC &	0000000076252120			
-ORDERS	0000000076190428	51	09.09.2014	03:41:32	Nie mo�na ustali� numeru klienta w IDOC &	0000000076190428			
-ORDERS	0000000076252095	51	10.09.2014	03:39:55	Nie mo�na ustali� numeru klienta w IDOC &	0000000076252095			
-ORDERS	0000000076252111	51	10.09.2014	03:40:08	Nie mo�na ustali� numeru klienta w IDOC &	0000000076252111			
-ORDERS	0000000076197628	51	09.09.2014	06:24:58	Nie mo�na ustali� numeru klienta w IDOC &	0000000076197628			
-ORDERS	0000000076465077	51	13.09.2014	05:54:59	Nie mo�na ustali� numeru klienta w IDOC &	0000000076465077			
-ORDERS	0000000076384056	51	12.09.2014	00:39:48	Nie mo�na ustali� numeru klienta w IDOC &	0000000076384056			
-ORDERS	0000000076417028	51	12.09.2014	09:39:41	Nie mo�na ustali� numeru klienta w IDOC &	0000000076417028			
-ORDERS	0000000076526721	51	15.09.2014	03:39:35	Nie mo�na ustali� numeru klienta w IDOC &	0000000076526721			
-ORDERS	0000000076730998	51	17.09.2014	06:55:23	Nie mo�na ustali� numeru klienta w IDOC &	0000000076730998			
-ORDERS	0000000076336461	51	11.09.2014	06:55:11	Nie mo�na ustali� numeru klienta w IDOC &	0000000076336461			
-ORDERS	0000000076252105	51	10.09.2014	03:40:02	Nie mo�na ustali� numeru klienta w IDOC &	0000000076252105			
-ORDERS	0000000076252106	51	10.09.2014	03:40:02	Nie mo�na ustali� numeru klienta w IDOC &	0000000076252106			
-ORDERS	0000000076252104	51	10.09.2014	03:40:02	Nie mo�na ustali� numeru klienta w IDOC &	0000000076252104			
-ORDERS	0000000076637425	51	16.09.2014	03:40:03	Nie mo�na ustali� numeru klienta w IDOC &	0000000076637425			
-ORDERS	0000000076230183	51	09.09.2014	12:10:19	Nie mo�na ustali� numeru klienta w IDOC &	0000000076230183			
-ORDERS	0000000076252115	51	10.09.2014	03:40:01	Nie mo�na ustali� numeru klienta w IDOC &	0000000076252115			
-ORDERS	0000000076252118	51	10.09.2014	03:40:10	Nie mo�na ustali� numeru klienta w IDOC &	0000000076252118			
+Typ komunikatu	Numer IDoc	Status	DataBłStat	GodzBłStat	TekstStat	Parametr 1	Parametr 2	Parametr 3	Parametr 4
+ORDERS	0000000076435625	53	12.09.2014	20:40:00	Kod ISO jednostki miary & nie jest przyporządkowany: pozycja &	PCE
+ORDERS	0000000076435627	53	12.09.2014	20:40:00	Kod ISO jednostki miary & nie jest przyporządkowany: pozycja &	PCE
+ORDERS	0000000076435628	53	12.09.2014	20:40:00	Kod ISO jednostki miary & nie jest przyporządkowany: pozycja &	PCE			
+ORDERS	0000000076875533	51	18.09.2014	08:11:29	Kod ISO jednostki miary & nie jest przyporządkowany: pozycja &	PCE			
+ORDERS	0000000076362396	51	11.09.2014	12:39:34	Kod ISO jednostki miary & nie jest przyporządkowany: pozycja &	PCE			
+ORDERS	0000000076357995	51	11.09.2014	11:09:37	Kod ISO jednostki miary & nie jest przyporządkowany: pozycja &	PCE			
+ORDERS	0000000076362110	51	11.09.2014	11:54:49	Kod ISO jednostki miary & nie jest przyporządkowany: pozycja &	PCE			
+ORDERS	0000000076884586	51	18.09.2014	10:10:15	Kod ISO jednostki miary & nie jest przyporządkowany: pozycja &	PCE			
+ORDERS	0000000076704141	51	16.09.2014	16:40:28	Kod ISO jednostki miary & nie jest przyporządkowany: pozycja &	PCE			
+ORDERS	0000000076252088	51	10.09.2014	03:39:43	Nie można ustalić numeru klienta w IDOC &	0000000076252088			
+ORDERS	0000000076252100	51	10.09.2014	03:39:58	Nie można ustalić numeru klienta w IDOC &	0000000076252100			
+ORDERS	0000000076252120	51	10.09.2014	03:40:14	Nie można ustalić numeru klienta w IDOC &	0000000076252120			
+ORDERS	0000000076190428	51	09.09.2014	03:41:32	Nie można ustalić numeru klienta w IDOC &	0000000076190428			
+ORDERS	0000000076252095	51	10.09.2014	03:39:55	Nie można ustalić numeru klienta w IDOC &	0000000076252095			
+ORDERS	0000000076252111	51	10.09.2014	03:40:08	Nie można ustalić numeru klienta w IDOC &	0000000076252111			
+ORDERS	0000000076197628	51	09.09.2014	06:24:58	Nie można ustalić numeru klienta w IDOC &	0000000076197628			
+ORDERS	0000000076465077	51	13.09.2014	05:54:59	Nie można ustalić numeru klienta w IDOC &	0000000076465077			
+ORDERS	0000000076384056	51	12.09.2014	00:39:48	Nie można ustalić numeru klienta w IDOC &	0000000076384056			
+ORDERS	0000000076417028	51	12.09.2014	09:39:41	Nie można ustalić numeru klienta w IDOC &	0000000076417028			
+ORDERS	0000000076526721	51	15.09.2014	03:39:35	Nie można ustalić numeru klienta w IDOC &	0000000076526721			
+ORDERS	0000000076730998	51	17.09.2014	06:55:23	Nie można ustalić numeru klienta w IDOC &	0000000076730998			
+ORDERS	0000000076336461	51	11.09.2014	06:55:11	Nie można ustalić numeru klienta w IDOC &	0000000076336461			
+ORDERS	0000000076252105	51	10.09.2014	03:40:02	Nie można ustalić numeru klienta w IDOC &	0000000076252105			
+ORDERS	0000000076252106	51	10.09.2014	03:40:02	Nie można ustalić numeru klienta w IDOC &	0000000076252106			
+ORDERS	0000000076252104	51	10.09.2014	03:40:02	Nie można ustalić numeru klienta w IDOC &	0000000076252104			
+ORDERS	0000000076637425	51	16.09.2014	03:40:03	Nie można ustalić numeru klienta w IDOC &	0000000076637425			
+ORDERS	0000000076230183	51	09.09.2014	12:10:19	Nie można ustalić numeru klienta w IDOC &	0000000076230183			
+ORDERS	0000000076252115	51	10.09.2014	03:40:01	Nie można ustalić numeru klienta w IDOC &	0000000076252115			
+ORDERS	0000000076252118	51	10.09.2014	03:40:10	Nie można ustalić numeru klienta w IDOC &	0000000076252118			
 ORDERS	0000000076205655	51	09.09.2014	07:40:29	Towar &1 posiada status: &2	87426	Nieaktualne		
 ORDERS	0000000076640132	53	16.09.2014	04:39:59	Towar &1 posiada status: &2	87545	Nieaktualne		
 ORDERS	0000000076222761	53	09.09.2014	11:40:39	Towar &1 posiada status: &2	87412	Nieaktualne		
