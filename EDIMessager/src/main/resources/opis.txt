@@ -1,0 +1,4 @@
+Nie można ustalić numeru klienta w IDOC &####to błędy wynikające z niezdefiniowanych w EP7 kodów GLN, których analiza została przesłana w osobnych zgłoszeniach.
+Terminem płatności musi być Z000 lub termin wcześniejszy####Komunikat oznacza, że termin płatności wybrany przez klienta nie jest dla niego dostępny – zlecenie należy wprowadzić ręcznie lub poprosić klienta o wystawienie zamówienia z innym terminem płatności.
+Towar & posiada status: &####Rekomendujemy wyjaśnienie przyczyny takiego statusu towarów oraz jeśli to potrzebne wprowadzenie reguł dla kodów EAN, które pozwolą uniknąć pojawiania się takich błędów.
+Towar &1 posiada status: &2####Rekomendujemy wyjaśnienie przyczyny takiego statusu towarów oraz jeśli to potrzebne wprowadzenie reguł dla kodów EAN, które pozwolą uniknąć pojawiania się takich błędów.

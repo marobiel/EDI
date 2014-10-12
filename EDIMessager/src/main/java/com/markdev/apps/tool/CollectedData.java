@@ -77,18 +77,46 @@ public class CollectedData {
 		boolean isSetProperty = (fields != null);
 		String[] lista = fields.split(",");
 		List<String> values = new ArrayList<String>();
+		
+		
+		String headersName = props.getProperty("headers");
+		boolean isheadersSet = (headersName != null);
+		String[] headersList = headersName.split(",");
+		List<String> headers = new ArrayList<String>();
+		
+		
+		
 
 		if (isSetProperty) {
 			values = Arrays.asList(lista);
 		}
+		
+		
+		if (isheadersSet) {
+			headers = Arrays.asList(headersList);
+		}
+		
 
 		StringBuilder builder = new StringBuilder();
 
+		
+		if (isSetProperty && isheadersSet){
+			builder.append("<tr>");
+			for (int i = 0; i < headersList.length; i++) {
+				if (values.contains(i+1+"")) {
+					builder.append("<td>");
+					builder.append(headersList[i]);
+					builder.append("</td>");
+				}
+			}
+			builder.append("</tr>");
+		}
+		
 		for (Integer rowNum : linesWithNumber.keySet()) {
 			builder.append("<tr>");
 			String[] linia = linesWithNumber.get(rowNum);
 
-			if (!isSetProperty) {
+			if (!isSetProperty)  {
 
 				for (String field : linia) {
 					builder.append("<td>");
