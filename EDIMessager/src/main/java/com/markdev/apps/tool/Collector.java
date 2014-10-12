@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Properties;
 
 import com.markdev.apps.tool.impl.DescRepository;
 
@@ -19,6 +20,7 @@ public class Collector {
 	
 	private RawData rawData;
     private Filter rowFilter;
+    private Properties props;
 	
 	private Map<String, CollectedData> aggregatedData = new LinkedHashMap<String, CollectedData>();
 	private DescRepository descRepository;

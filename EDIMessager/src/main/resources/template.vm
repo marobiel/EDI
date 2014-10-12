@@ -33,6 +33,12 @@ th, td, caption {
 	<p><span style="font-family:courier new,courier,monospace">$key</span></p>
 	
 	<p>$collector.get($key).getDesc()</p>
+	
+   #if ($showdetails)	
+		<table border="1">
+			$collector.get($key).toHtmlString($props)
+		</table>
+   #end	
 
 	
 

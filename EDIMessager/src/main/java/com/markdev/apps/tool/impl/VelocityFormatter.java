@@ -16,11 +16,13 @@ public class VelocityFormatter implements Formatter {
 
 	private Collector collector;
 	private String template;
+	private Properties props;
 	
 	
-	public VelocityFormatter(Collector collector,String template) {
+	public VelocityFormatter(Collector collector,String template, Properties props) {
 		this.collector=collector;
 		this.template=template;
+		this.props=props;
 	}
 
 	public void formatTo(Exporter exporter) {
@@ -51,7 +53,10 @@ public class VelocityFormatter implements Formatter {
 		ctx.put("keyIterator", collector.iterator());
 		ctx.put("collector", collector);
 		
+		boolean showdetails =  Boolean.parseBoolean(props.getProperty("showdetails","false"));		
+		ctx.put("showdetails", showdetails);
 	
+		ctx.put("props", props);
 		
 	}
 
