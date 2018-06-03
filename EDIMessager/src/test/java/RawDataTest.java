@@ -57,10 +57,6 @@ public class RawDataTest {
 		table.getColumnValues(0);
 		
 	}
-   
-    @Test
-	public void testSomethingWrong(){
-		fail("Zamierzona akcja");
-	}
+
 
 }
