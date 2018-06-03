@@ -13,7 +13,7 @@ import com.markdev.apps.tool.impl.ParserImpl;
 
 public class CSVImporterTest {
 
-	final static String PATH = "/home/hostuser/Documents/workspace-sts-3.5.1.RELEASE/EDIMessager/src/main/resources/EDI.txt";
+	final static String PATH = "src/main/resources/EDI.txt";
 
 	@Test
 	public void testImportData() {

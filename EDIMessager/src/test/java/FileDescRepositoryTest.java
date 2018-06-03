@@ -18,7 +18,7 @@ public class FileDescRepositoryTest {
 	@Test
 	public void test() {
 		
-		String path="/home/markus/git/EDI/EDIMessager/src/main/resources/opis.txt";
+		String path="src/main/resources/opis.txt";
 		
 		FileDescRepository repo = new FileDescRepository(new File(path));
 		System.out.println(repo);
