@@ -58,9 +58,5 @@ public class RawDataTest {
 		
 	}
    
-    @Test
-	public void testSomethingWrong(){
-		fail("Zamierzona akcja");
-	}
-
+    
 }
