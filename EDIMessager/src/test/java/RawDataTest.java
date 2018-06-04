@@ -56,7 +56,7 @@ public class RawDataTest {
 		table.getColumnValues(0);	
 	}
 	
-	@Test
+	
 	public void throwFail(){
 		fail("It's planned");
 	}
